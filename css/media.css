@@ -1,0 +1,155 @@
+@media screen and (max-width:1000px) {
+    .container {
+        padding-inline: 5%;
+        padding-block: 50px;
+    }
+
+    #section1 {
+        gap: 50px;
+    }
+
+    #sec5Center>form input {
+        width: 60%;
+    }
+
+    #section5 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #section1 {
+        flex-direction: column;
+    }
+
+    #sec1Image {
+        order: 1;
+    }
+
+    #sec1Text {
+        order: 2;
+        text-align: center;
+    }
+
+    #section1 .flex-row {
+        justify-content: center;
+    }
+
+    #section5 {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #sec5Left,
+    #sec5Right {
+        width: 50%;
+        order: 1;
+    }
+
+    #sec5Center {
+        order: 3;
+        width: 100%;
+    }
+
+    #sec2CardChefs {
+        flex-wrap: wrap;
+    }
+
+    #sec2CardChefs>div {
+        width: 45%;
+    }
+
+    #sec3image {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #navbar div:first-of-type {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 200px;
+        padding-block: 20px;
+        border-radius: 10px;
+        height: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #navbar .iconlist {
+        opacity: 1;
+    }
+
+    #navbar div:first-of-type:hover {
+        height: fit-content;
+        top: 80px;
+        background-color: rgb(127, 118, 118);
+    }
+
+    .sec4Informaion>div {
+        display: block;
+
+    }
+
+    .sec4Informaion>div div {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #sec2CardChefs>div {
+        display: block;
+        width: 100%;
+    }
+
+    #section4 .formsec4 form>div {
+        flex-direction: column;
+    }
+
+    #section4 .formsec4 form>div input {
+        width: 94%;
+    }
+
+    #section5 {
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    #section5 #sec5Left,
+    #section5 #sec5Right {
+        width: 100%;
+    }
+
+    #sec5Right {
+        order: 4;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #lightMood {
+        display: none;
+    }
+
+    #section1 h2,
+    #section2 h2,
+    #section3 h2,
+    #section4 h2 {
+        font-size: 30px;
+    }
+
+    #section1 p,
+    #section2 p,
+    #section3 p,
+    #section4 p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    #navbar div:first-of-type {
+        width: 100px;
+    }
+}

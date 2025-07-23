@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: rgb(44, 43, 43);
+    text-decoration: none;
+}
+
+p {
+    color: rgb(131, 127, 127)
+}
+
+img {
+    width: 100%;
+}
+
+.InlineBlock {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container {
+    padding-inline: 10%;
+    padding-block: 50px;
+}
+
+.bageodd {
+    background-color: rgb(236, 236, 236);
+}
+
+input:focus {
+    border: 0;
+    outline: 0;
+}
+
+#navbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+    ;
+    padding-block: 0;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+.iconlist {
+    opacity: 0;
+}
+
+#navbar div:first-of-type {
+    font-size: 17px;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+#navbar a>:nth-child(2),
+#section5 a :nth-child(2) {
+    color: brown;
+    font-size: 40px;
+}
+
+#lightMood {
+    font-size: 25px;
+}
+
+#lightMood a:nth-of-type(1) {
+    display: none;
+}
+
+
+#section1 {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+#sec1Text h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#sec1Text>div {
+    margin-top: 15px;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#sec1Text>div a:nth-child(2) {
+    align-items: center;
+    gap: 8px;
+}
+
+#sec1Text>div a button {
+    background-color: rgb(218, 18, 18);
+    color: white;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 0 30px 30px 30px;
+}
+
+#sec1Text>div a i {
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 30px;
+    background-color: rgb(48, 47, 47);
+    z-index: 1;
+    border: 0;
+    box-shadow: 0 0 5px white;
+}
+
+.BGIQON {
+    width: 20px;
+    height: 40px;
+    background-color: #c00e0e;
+    border-radius: 50px 0 0 50px;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 0;
+}
+
+#section2 {
+    margin-block: 50px;
+}
+
+#sec2Adress {
+    text-align: center;
+}
+
+#sec2Adress h2 {
+    display: inline-block;
+    white-space: pre;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+#sec2Adress h2:nth-child(3) {
+    color: #c00e0e;
+}
+
+#sec2CardChefs>div {
+    width: 33.333%;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(144, 136, 136);
+    position: relative;
+}
+
+#sec2CardChefs>div:hover {
+    transform: scale(1.05);
+    transition: 2s;
+}
+
+#sec2CardChefs {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.sec2cardTex3 {
+    padding: 20px;
+}
+
+.sec2cardTex3 :nth-child(2) {
+    margin-block: 10px;
+}
+
+.sec2cardTex3 p {
+    font-size: 15px;
+}
+
+.flipcard {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(195, 188, 188, 0.5);
+    width: 50px;
+    gap: 20px;
+    position: absolute;
+    top: 30px;
+    right: -50px;
+    padding-block: 10px;
+    border-radius: 5px;
+    transition: right 3s ease;
+    opacity: 0;
+}
+
+#sec2CardChefs>div:hover .flipcard {
+    right: 10px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.flipcard a i {
+    color: rgb(105, 108, 111);
+}
+
+.flipcard a:hover i {
+    color: rgb(0, 0, 0);
+}
+
+#sec3image {
+    display: flex;
+    gap: 20px;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sec3image .flex_column>div {
+    position: relative;
+}
+
+#sec3image .flex_column>div {
+    border: 5px solid white;
+    overflow: hidden;
+}
+
+#sec3image .flex_column>div>div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 45, 45, 0.7);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    opacity: 0;
+    transition: 2s;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sec3image .flex_column>div>div h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+#sec3image .flex_column>div>div p {
+    color: rgb(203, 197, 197);
+}
+
+#sec3image .flex_column>div:hover>div {
+    top: 0;
+    opacity: 1;
+}
+
+#section4 {
+    background-color: rgb(244, 241, 241);
+}
+
+#section4 .sec4Map iframe {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.sec4Informaion>div>div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #e3dfdf;
+    padding: 15px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.sec4Informaion>div {
+    display: flex;
+    gap: 20px;
+}
+
+.sec4Informaion h2 {
+    color: rgb(125, 125, 125)
+}
+
+.sec4Informaion span {
+    color: black;
+    font-weight: 700;
+}
+
+.sec4Informaion p {
+    color: rgb(66, 62, 62)
+}
+
+.sec4Informaion i {
+    background-color: #c00e0e;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+}
+
+#section4 .formsec4 form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    background-color: white;
+    align-content: center;
+}
+
+#section4 .formsec4 form>div {
+    display: flex;
+    gap: 20px;
+}
+
+#section4 .formsec4 form>div input {
+    width: 50%;
+    border: 2px solid rgb(161, 160, 160);
+    padding: 10px;
+}
+
+#section4 .formsec4 form input,
+#section4 .formsec4 form textarea {
+    border: 2px solid rgb(161, 160, 160);
+    padding: 10px;
+    resize: none;
+}
+
+#section4 .formsec4 form .supmit {
+    width: 200px;
+    align-self: center;
+    border-radius: 40px;
+    background-color: #890505;
+    color: white;
+    cursor: pointer;
+}
+
+#section4 .formsec4 form input:nth-child(3) {
+    height: 200px;
+    vertical-align: top;
+}
+
+#section4 .formsec4 form textarea {
+    height: 150px;
+}
+
+#section4 .formsec4 form input:focus,
+#section4 .formsec4 form textarea:focus {
+    border-color: #890505;
+    outline: #890505;
+}
+
+#section5 {
+    padding-inline: 5%;
+    padding-block: 30px;
+    color: white;
+    background-color: black;
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#section5 #sec5Left,
+#section5 #sec5Right {
+    width: 40%;
+}
+
+#section5 h3,
+#section5 h1,
+#section5 p {
+    color: white;
+}
+
+#sec5Left>.InlineBlock {
+    width: 30px;
+    margin-right: 10px;
+}
+
+#sec5Left p {
+    padding-block: 10px;
+}
+
+#sec5Left h3 {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid gray;
+    margin-bottom: 20px;
+}
+
+#sec5Lefticons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#sec5Lefticons a i,
+#sec5Center i {
+    color: white;
+    font-size: 20px;
+}
+
+#sec5Center,
+#sec5Right {
+    padding-top: 10px;
+}
+
+#sec5Center>p {
+    padding-block: 20px;
+}
+
+#sec5Center>form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#sec5Center>form input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%;
+}
+
+#sec5Center>form button {
+    background-color: #c00e0e;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+#sec5Center .sec5Links {
+    display: flex;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+#sec5Center .sec5Links>div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#sec5Center .sec5Links>div p:hover {
+    margin-left: 5px;
+    transition: margin 1s;
+    background-color: grey;
+    padding: 5px;
+}
+
+#sec5Right>div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-block: 15px;
+    cursor: pointer;
+}
+
+#sec5Right>div i {
+    color: #890505;
+    font-size: 25px;
+}
